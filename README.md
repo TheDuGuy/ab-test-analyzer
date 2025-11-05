@@ -1,16 +1,55 @@
-# React + Vite
+# A/B Test Results Analyser
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Statistical analysis tool for A/B tests with confidence intervals, significance testing, and visual comparison.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Statistical significance testing** with p-value calculations
+- **Confidence interval visualisation**
+- **Relative uplift** and conversion rate comparisons
+- **Interactive charts** showing test performance
+- **Sample size recommendations**
+- **Clear visual indicators** for test conclusions
+- **PDF export** of results
 
-## React Compiler
+## Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Visit [https://ab-test-analyzer-brown.vercel.app](https://ab-test-analyzer-brown.vercel.app)
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- Tailwind CSS
+- Recharts for data visualisation
+- jsPDF for PDF exports
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## How It Works
+
+1. Enter your test details (channel, date range)
+2. Input data for both variants:
+   - Number of visitors
+   - Number of conversions
+3. The tool calculates:
+   - Conversion rates for both variants
+   - Statistical significance (p-value)
+   - Confidence intervals
+   - Relative uplift
+   - Test recommendation
+
+### Statistical Methods
+
+- Uses z-test for proportion differences
+- Calculates 95% confidence intervals
+- Determines statistical significance at p < 0.05
+
+## Built By
+
+[Edou Mota](https://github.com/TheDuGuy) - RevOps & Marketing Automation Specialist

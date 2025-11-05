@@ -543,7 +543,10 @@ function App() {
         {/* Footer */}
         <div className="mt-12 text-center">
           <p className="text-gray-400 text-sm">
-            Built by <a href="https://edou-mota-interactive-cv.vercel.app" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-colors">Edou Mota</a>
+            Built by <a href="https://github.com/TheDuGuy" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-purple-300 transition-colors">Edou Mota</a>
+          </p>
+          <p className="text-gray-500 text-xs mt-1">
+            RevOps & Marketing Automation Specialist
           </p>
         </div>
       </div>
